@@ -11,8 +11,9 @@
 <div><img [src]="coursesPicLink" alt="CoursesPic"></div>
 <app-authors-component></app-authors-component>
 <courses></courses>
-<button class="btn btn-primary" (click)="clickButton()" (mouseenter)="clickButton()">Save</button>
-
+<button class="btn btn-primary" (click)="consoleUserName()">Save</button>
+<input [(ngModel)]="userName"  type="text">
+<h3>{{userName}}</h3>
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
 <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
