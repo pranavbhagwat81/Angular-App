@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular';
+  coursesPicLink:string = "https://image.shutterstock.com/image-photo/online-courses-260nw-255297163.jpg";
 }
