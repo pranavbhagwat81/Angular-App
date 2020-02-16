@@ -16,8 +16,7 @@ import {CoursesService} from './courses.service';
     </h2>`
 })
 export class CoursesComponent {
-    title = "";
-    //title = " Courses";
+    title = " Courses";
     courses = [];
     courseCount:number = 0;
 
@@ -28,14 +27,10 @@ export class CoursesComponent {
     }
 
     getTitle(){
-        this.title = this.getCourseCount()+ " Courses";
         return this.title;
     }
 
-    getCourseCount(){
-        console.log("Im getCourseCount()")
-        return this.courses.length;
-    }
+
     
 
     
