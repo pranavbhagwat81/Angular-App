@@ -16,15 +16,25 @@ import {CoursesService} from './courses.service';
     </h2>`
 })
 export class CoursesComponent {
-    title = "List of Courses";
+    title = "";
+    //title = " Courses";
     courses = [];
+    courseCount:number = 0;
+
     constructor(service:CoursesService){
          this.courses = service.getCourses();
          console.log(this.courses);
+         console.log(this.courses.length);
     }
 
     getTitle(){
+        this.title = this.getCourseCount()+ " Courses";
         return this.title;
+    }
+
+    getCourseCount(){
+        console.log("Im getCourseCount()")
+        return this.courses.length;
     }
     
 
